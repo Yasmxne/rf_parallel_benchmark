@@ -1,0 +1,23 @@
+
+    Main result
+    ===========
+
+    The full grid search tested 8 configurations.
+    The adaptive benchmark tested 5 configurations.
+
+    The best configuration found by grid search is n_jobs=8
+    with a training time of 4.262 seconds.
+
+    The best configuration found by adaptive search is n_jobs=8
+    with a training time of 4.280 seconds.
+
+    Both methods obtained an accuracy of approximately 0.948.
+
+    Conclusion:
+    The adaptive benchmark found a similar best configuration while using fewer tests.
+    This shows that it can reduce the benchmarking cost compared to a full grid search.
+
+    The speedup curve also shows that the gain is not perfectly linear.
+    Most of the improvement happens when moving from 1 worker to several workers,
+    then the additional gains become smaller.
+    
